@@ -1,0 +1,737 @@
+/****************index start*****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    /* Light blue background */
+
+}
+
+
+
+.shinchan-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 20px;
+}
+
+.shinchan-logo .letter {
+    font-family: 'comic sans MS', cursive;
+    font-size: 3rem;
+    color: white;
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 10px;
+    position: relative;
+    text-shadow: 2px 2px 4px black;
+}
+
+.letter:nth-child(odd) {
+    transform: translateY(-10px);
+}
+
+.letter:nth-child(even) {
+    transform: translateY(10px);
+}
+
+.letter::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: rgba(13, 71, 161, 0.8);
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+#index-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+
+#index-header .menu {
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-size: 2rem;
+
+
+}
+
+
+
+
+@media(max-width: 768px) {
+    #index-header {
+
+        flex-direction: column;
+        padding: 10px;
+
+    }
+}
+
+
+.menu {
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+}
+
+
+
+.menu a {
+
+    font-size: 30px;
+    padding: 5px;
+
+
+}
+
+
+
+
+
+
+/**********home image*******/
+.home-master-images {
+
+    position: relative;
+    width: 600%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.home-master-images img {
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#hai-shinchan {
+    position: absolute;
+
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 32px;
+
+    padding: 10px 15px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media(max-width:600px) {
+    #hai-shinchan {
+        font-size: 20px;
+        padding: 4px 8px 10px 8px;
+    }
+}
+
+/********ANNIVERSARY**********/
+
+.Shincahn-Anni {
+    text-align: center;
+
+    font-family: 'comic sans MS', cursive;
+    font-size: 2rem;
+}
+
+.Anni-para {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px 20px;
+    text-align: justify;
+    color: #444;
+
+}
+
+.train1 {
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*************movies list*****************/
+
+.section-heading {
+    font-size: 2.5rem;
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding: 5rem;
+    text-align: center;
+}
+
+.Anni-para {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.title {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    overflow: hidden;
+}
+
+
+
+.title img {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.title h5 {
+
+    text-align: center;
+    color: #d32f2f;
+    margin: 10px;
+}
+
+.title p {
+
+    text-align: center;
+    color: #555;
+    margin: 10px;
+
+
+}
+
+.title:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+}
+
+#varieties {
+    background-color: #e3e3e3;
+}
+
+
+/************new videos*************/
+
+.Triler-india {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+.videos {
+    background-color: red;
+    border: 10px solid red;
+
+}
+
+.vide-contain {
+
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    padding-bottom: 30%;
+    height: 0;
+    margin: 0;
+}
+
+.vide-contain iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
+
+
+/***********footer****************/
+
+footer {
+    font-size: 1.4rem;
+    background-color: red;
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #fafafa;
+}
+
+footer a {
+    color: #e3e3e3;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/****************index over*******************/
+
+
+
+
+
+
+
+/*******************************History start*********************/
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e3e3;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4b4b;
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    bottom: 0;
+    width: 2px;
+    background-color: #ff4b4b;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.content {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+}
+
+#History {
+    font-size: 1.4rem;
+    background-color: #e3e3e3;
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(6, 6, 6, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: black;
+
+}
+
+#History {
+    color: black;
+    text-decoration: none;
+
+}
+
+#History a {
+    color: blue;
+}
+
+#History a:hover {
+    color: darkblue;
+}
+
+
+
+
+/*******************Character Start ***********************/
+
+
+
+.character-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.Char-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.char-cards {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+}
+
+.char-cards img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.char-cards h3 {
+    margin: 10px;
+    color: #d32f2f;
+    text-align: center;
+}
+
+.char-cards p {
+    margin: 10px;
+    color: #555;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.char-cards img {
+    width: 100%;
+    /* Ensures the image covers the full width of the card */
+    height: 200px;
+    /* Sets a uniform height for all images */
+    object-fit: cover;
+    /* Ensures the image fits within the area without distortion */
+    border-bottom: 2px solid #f4f4f4;
+    /* Consistent styling from the previous code */
+}
+
+.char-cards:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/***************About Start************/
+
+
+
+
+/* General Styles */
+body .About-love {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+
+
+/* Main Section */
+.love-about {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Section */
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-image {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.text-content h2 {
+    font-size: 1.8rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Why Loved Section */
+.why-loved ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.why-loved ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.why-loved ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Fun Facts Section */
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fact-item {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fact-item img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+
+
+
+
+/***************contact us start*******************/
+/* Style for the body */
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Contact Container Styling */
+.contact-container {
+    display: flex;
+    /* Align items side by side */
+    justify-content: center;
+    /* Align items towards the left */
+    align-items: center;
+    /* Vertically align items */
+    flex-direction: row;
+    /* Reduces the space between the image and the form */
+    padding: 80px 20px;
+    /* Avoids overlap with the header */
+    min-height: calc(100vh - 120px);
+    /* Adjusts for header and footer height */
+}
+
+/* Image Section */
+.image-section,
+.form-section {
+    width: 45%;
+    /* Both sections take the same width */
+    height: 400px;
+    /* Fixed height for uniform size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* Ensures padding doesn’t exceed width */
+}
+
+.image-section img {
+    width: 45%;
+    /* Equal width for the left side */
+    height: 100%;
+    /* Fixed height for uniformity */
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Form Section */
+.form-section {
+    width: 45%;
+    /* Equal width for the right section */
+    height: auto;
+    /* Adjusts height based on content */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent for visibility */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Stacks form elements vertically */
+    justify-content: center;
+    /* Centers form content vertically */
+    align-items: center;
+    /* Centers form content horizontally */
+}
+
+
+form {
+    width: 100%;
+    /* Ensures the form fits the container */
+    max-width: 300px;
+    /* Limits the size for a compact look */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Adds space between form elements */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
